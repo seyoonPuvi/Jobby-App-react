@@ -1,0 +1,105 @@
+.login-app-cont {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-main-cont {
+  background-color: #272727;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  width: 30%;
+}
+
+.login-logo-cont {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.login-logo {
+  height: 3rem;
+  width: 10rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  width: 90%;
+  margin: auto;
+}
+.input-cont {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.input-label {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.input {
+  background-color: transparent;
+  border: 0.5px solid #f8fafc;
+  border-radius: 5px;
+  color: white;
+  padding: 1rem;
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 1; /* Ensures the color is fully opaque */
+}
+
+.error-txt {
+  color: red;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.login-btn {
+  color: white;
+  background-color: #4f46e5;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 15px;
+
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; /* Add transition timing */
+}
+
+.login-btn:hover {
+  transform: scale(1);
+}
+
+@media (max-width: 700px) {
+  .login-main-cont {
+    width: 60%;
+  }
+
+  .form-cont {
+    width: 100%;
+  }
+  .login-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .input {
+    padding: 5px;
+  }
+
+  .input-label {
+    font-size: 1rem;
+  }
+}
