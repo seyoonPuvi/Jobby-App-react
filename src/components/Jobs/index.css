@@ -95,6 +95,7 @@ button {
   border-bottom: 1px solid white;
   padding: 2rem 0;
   margin-top: 2rem;
+  padding-inline-start: 0;
 }
 
 .sorting-category-title {
@@ -123,6 +124,7 @@ input[type='checkbox'] {
 
 .salaryRange-category-cont {
   width: 100%;
+  padding-inline-start: 0;
 }
 
 /* job-cont */

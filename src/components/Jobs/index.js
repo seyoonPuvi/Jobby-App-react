@@ -170,10 +170,10 @@ class Jobs extends Component {
   }
 
   onRenderEmploymentTypeFilter = () => (
-    <div className="employment-category-cont">
+    <ul className="employment-category-cont">
       <h1 className="sorting-category-title">Type of Employment</h1>
       {employmentTypesList.map(each => (
-        <div className="each-filter-category" key={each.employmentTypeId}>
+        <li className="each-filter-category" key={each.employmentTypeId}>
           <input
             type="checkbox"
             value={each.employmentTypeId}
@@ -183,9 +183,9 @@ class Jobs extends Component {
           <label htmlFor={each.employmentTypeId} className="label">
             {each.label}
           </label>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 
   onChangeSalaryRange = event => {
@@ -195,10 +195,10 @@ class Jobs extends Component {
   }
 
   onRenderSalaryRangeFilter = () => (
-    <div className="salaryRange-category-cont">
+    <ul className="salaryRange-category-cont">
       <h1 className="sorting-category-title">Salary Range</h1>
       {salaryRangesList.map(each => (
-        <div className="each-filter-category" key={each.salaryRangeId}>
+        <li className="each-filter-category" key={each.salaryRangeId}>
           <input
             type="radio"
             value={each.salaryRangeId} // The value for this radio button
@@ -209,9 +209,9 @@ class Jobs extends Component {
           <label htmlFor={each.salaryRangeId} className="label">
             {each.label}
           </label>
-        </div>
+        </li>
       ))}
-    </div>
+    </ul>
   )
 
   onDisplaySorting = () => (

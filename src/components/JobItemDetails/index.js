@@ -100,10 +100,15 @@ class JobItemDetails extends Component {
     })
   }
 
+  onWindowScroll = () => {
+    window.scrollTo(0, 0)
+  }
+
   onRenderJobItemDetails = () => {
     const {jobItemData} = this.state
     const {jobDetails} = jobItemData
     console.log(jobDetails)
+    this.onWindowScroll()
 
     return (
       <>
