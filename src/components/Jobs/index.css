@@ -286,6 +286,7 @@ input[type='checkbox'] {
 }
 
 /* making responsive */
+/* making responsive */
 @media (min-width: 800px) {
   .search-cont-mobile {
     display: none;
@@ -310,32 +311,30 @@ input[type='checkbox'] {
   }
 }
 
-@media (max-width: 500px) {
-  .job-app-cont {
-    padding: 2rem 2rem;
-  }
-  .job-list {
-    padding: 2rem 2rem;
-  }
-
+@media (min-width: 350px) and (max-width: 500px) {
   .location-icon {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .location {
-    font-size: 1.5rem;
+    font-size: 1.2rem !important;
   }
 
   .job-icon {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.5rem !important;
+    color: white !important;
   }
 
   .employment-type {
-    font-size: 1.5rem;
-    color: white;
+    font-size: 1.2rem !important;
+    color: white !important;
   }
+
   .salary {
-    font-size: 1.8rem;
+    font-size: 1.2rem !important;
+  }
+
+  .job-list {
+    padding: 2rem 2rem !important;
   }
 }
